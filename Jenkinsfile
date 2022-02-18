@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://hub.docker.com', 'Docker_Hub') {
+    docker.withRegistry('https://hub.docker.com', 'docker_hub') {
 
         def customImage = docker.build("imyacoob86/docker-webapp")
 
